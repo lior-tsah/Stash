@@ -9,29 +9,30 @@ import RequireAuth from "./components/RequireAuth";
 
 function App() {
   return (
-    <AuthProvider>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/oauth-callback" element={<OAuthCallback />} />
-        <Route
-          path="/dashboard"
-          element={
-            // <RequireAuth>
-              <Dashboard />
-            // </RequireAuth>
-          }
-        />
-        <Route
-          path="/bills"
-          element={
-            // <RequireAuth>
-              <Bills />
-            // </RequireAuth>
-          }
-        />
-        <Route path="*" element={<Navigate to="/login" replace />} />
-      </Routes>
-    </AuthProvider>
+    // <AuthProvider>
+    //   <Routes>
+    //     <Route path="/login" element={<Login />} />
+    //     <Route path="/oauth-callback" element={<OAuthCallback />} />
+    //     <Route
+    //       path="/dashboard"
+    //       element={
+    //         // <RequireAuth>
+    //           <Dashboard />
+    //         // </RequireAuth>
+    //       }
+    //     />
+    //     <Route
+    //       path="/bills"
+    //       element={
+    //         // <RequireAuth>
+    //           <Bills />
+    //         // </RequireAuth>
+    //       }
+    //     />
+    //     <Route path="*" element={<Navigate to="/login" replace />} />
+    //   </Routes>
+    // </AuthProvider>
+    <Dashboard />
   );
 }
 

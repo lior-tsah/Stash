@@ -200,7 +200,7 @@ export const deviceQuery = (data: any) => postData("device/query", data);
 export const deleteAllData = () => postData("device/clear", {});
 export const updateGroup = (data: any) => putData("device/group", data);
 export const sendChat = (message: string, id?: string) =>
-  postData("chat", { message, id });
+  postData("chat", { message, id }, true);
 export const chatKill = () => postData("chat/kill", {});
 export const chatIo = () => postData("chat/chatio", {});
 export const chatKagent = (data: any) => postData("chat/kagent", data);

@@ -38,7 +38,7 @@ const WrapperPage = ({ children, title }: WrapperProps) => {
 
   return (
     <div className="wrapper-container">
-      <SideBar />
+      {/* <SideBar /> */}
       <div className="page-top-container">
         <TopBar title={title} />
         <div className="page" ref={wrapperRef}>
